@@ -33,6 +33,15 @@
 		.text-center{
 			text-align: center;
 		}
+
+		#progress input{
+			width: 0;
+			margin-bottom: 0;
+		}
+
+		#progress .tasks{
+			background-color: #f2f2f2;
+		}
 	</style>
 </head>
 <body>
@@ -40,7 +49,35 @@
 	<h1 class="text-center">Progress Bar</h1>
 
 	<!-- Show form progress here -->
-	<div id="progress"></div>
+	<div id="progress">
+		<div class="progress"></div>
+		<div class="tasks">
+			<div>
+				<input type="checkbox" value="Name" name="name" disabled />
+				Name
+			</div>
+
+			<div>
+				<input type="checkbox" value="Name" name="name" disabled />
+				Email Address
+			</div>
+
+			<div>
+				<input type="checkbox" value="Name" name="name" disabled />
+				Phone Number
+			</div>
+
+			<div>
+				<input type="checkbox" value="Name" name="name" disabled />
+				Website
+			</div>
+
+			<div>
+				<input type="checkbox" value="Name" name="name" disabled />
+				Notes
+			</div>
+		</div>
+	</div>
 
 	<form id="autosave">
 		<div>
