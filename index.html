@@ -2,47 +2,7 @@
 <html>
 <head>
 	<title>Project Template</title>
-
-	<style type="text/css">
-		body {
-			margin-left: auto;
-			margin-right: auto;
-			max-width: 40em;
-			width: 88%;
-		}
-
-		label,
-		input,
-		textarea {
-			width: 100%;
-		}
-
-		label {
-			font-weight: bold;
-		}
-
-		input,
-		textarea {
-			margin-bottom: 2em;
-		}
-
-		textarea {
-			height: 12em;
-		}
-
-		.text-center{
-			text-align: center;
-		}
-
-		#progress input{
-			width: 0;
-			margin-bottom: 0;
-		}
-
-		#progress .tasks{
-			background-color: #f2f2f2;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
 
@@ -50,32 +10,32 @@
 
 	<!-- Show form progress here -->
 	<div id="progress">
-		<div class="progress"></div>
+		<div class="progress">progress bar here</div>
 		<div class="tasks">
-			<div>
-				<input type="checkbox" value="Name" name="name" disabled />
-				Name
-			</div>
+			<label class="container">Name
+			  <input type="checkbox" checked="checked" disabled>
+			  <span class="checkmark"></span>
+			</label>
 
-			<div>
-				<input type="checkbox" value="Name" name="name" disabled />
-				Email Address
-			</div>
+			<label class="container">Email Address
+			  <input type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
 
-			<div>
-				<input type="checkbox" value="Name" name="name" disabled />
-				Phone Number
-			</div>
+			<label class="container">Phone Number
+			  <input type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
 
-			<div>
-				<input type="checkbox" value="Name" name="name" disabled />
-				Website
-			</div>
+			<label class="container">Website
+			  <input type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
 
-			<div>
-				<input type="checkbox" value="Name" name="name" disabled />
-				Notes
-			</div>
+			<label class="container">Notes
+			  <input type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
 		</div>
 	</div>
 
