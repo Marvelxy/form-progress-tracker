@@ -45,6 +45,12 @@ textarea {
 	font-weight: normal;
 }
 
+.progress .p10{
+	background-color: red;
+	width: 50px;
+	height: 20px;
+}
+
 /* The container */
 .container {
   display: block;
