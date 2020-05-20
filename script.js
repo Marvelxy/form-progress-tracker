@@ -16,7 +16,13 @@
 	  //name.value = 'Focus has been lost';
 	  if(name.value){
 	  	progress.classList.add('p10');
-	  	nameCheckBox.setAttribute('checked', 'checked');
+	  	//nameCheckBox.setAttribute('checked', 'checked');
+	  	nameCheckBox.checked = true;
+	  }
+	  else{
+	  	progress.classList.remove('p10');
+	  	//nameCheckBox.setAttribute('checked', 'unchecked');
+	  	nameCheckBox.checked = false;
 	  }
 
 	  console.log()
