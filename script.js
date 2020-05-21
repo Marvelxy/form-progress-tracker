@@ -23,6 +23,7 @@
 		}
 	});
 
+
 	let email = document.querySelector('#email');
 	let emailCheckBox = document.querySelector('#email-checkbox');
 
@@ -37,6 +38,60 @@
 			clearProgress();
 		  	progress.classList.remove('p20');
 		  	emailCheckBox.checked = false;
+		}
+	});
+
+
+	let phone = document.querySelector('#phone');
+	let phoneCheckBox = document.querySelector('#phone-checkbox');
+
+	phone.addEventListener('blur', function(){
+		if(phone.value){
+			progressCount += 20;
+		  	progress.classList.add('p'+progressCount);
+		  	phoneCheckBox.checked = true;
+		}
+		else{
+			progressCount -= 20;
+			clearProgress();
+		  	progress.classList.remove('p20');
+		  	phoneCheckBox.checked = false;
+		}
+	});
+
+
+	let website = document.querySelector('#website');
+	let websiteCheckBox = document.querySelector('#website-checkbox');
+
+	website.addEventListener('blur', function(){
+		if(website.value){
+			progressCount += 20;
+		  	progress.classList.add('p'+progressCount);
+		  	websiteCheckBox.checked = true;
+		}
+		else{
+			progressCount -= 20;
+			clearProgress();
+		  	progress.classList.remove('p20');
+		  	websiteCheckBox.checked = false;
+		}
+	});
+
+
+	let phone = document.querySelector('#phone');
+	let phoneCheckBox = document.querySelector('#phone-checkbox');
+
+	phone.addEventListener('blur', function(){
+		if(phone.value){
+			progressCount += 20;
+		  	progress.classList.add('p'+progressCount);
+		  	phoneCheckBox.checked = true;
+		}
+		else{
+			progressCount -= 20;
+			clearProgress();
+		  	progress.classList.remove('p20');
+		  	phoneCheckBox.checked = false;
 		}
 	});
 
