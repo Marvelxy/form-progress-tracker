@@ -34,6 +34,7 @@
 		}
 		else{
 			progressCount -= 20;
+			clearProgress();
 		  	progress.classList.remove('p20');
 		  	emailCheckBox.checked = false;
 		}
