@@ -36,7 +36,7 @@
 		else{
 			progressCount -= 20;
 			clearProgress();
-		  	progress.classList.remove('p20');
+		  	progress.classList.add('p'+progressCount);
 		  	emailCheckBox.checked = false;
 		}
 	});
@@ -54,7 +54,7 @@
 		else{
 			progressCount -= 20;
 			clearProgress();
-		  	progress.classList.remove('p20');
+		  	progress.classList.add('p'+progressCount);
 		  	phoneCheckBox.checked = false;
 		}
 	});
@@ -72,7 +72,7 @@
 		else{
 			progressCount -= 20;
 			clearProgress();
-		  	progress.classList.remove('p20');
+		  	progress.classList.add('p'+progressCount);
 		  	websiteCheckBox.checked = false;
 		}
 	});
@@ -90,7 +90,7 @@
 		else{
 			progressCount -= 20;
 			clearProgress();
-		  	progress.classList.remove('p20');
+		  	progress.classList.add('p'+progressCount);
 		  	notesCheckBox.checked = false;
 		}
 	});
