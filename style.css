@@ -51,6 +51,12 @@ textarea {
 	height: 20px;
 }
 
+.progress .p20{
+	background-color: green;
+	width: 100px;
+	height: 20px;
+}
+
 /* The container */
 .container {
   display: block;
