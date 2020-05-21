@@ -78,20 +78,20 @@
 	});
 
 
-	let phone = document.querySelector('#phone');
-	let phoneCheckBox = document.querySelector('#phone-checkbox');
+	let notes = document.querySelector('#notes');
+	let notesCheckBox = document.querySelector('#notes-checkbox');
 
-	phone.addEventListener('blur', function(){
-		if(phone.value){
+	notes.addEventListener('blur', function(){
+		if(notes.value){
 			progressCount += 20;
 		  	progress.classList.add('p'+progressCount);
-		  	phoneCheckBox.checked = true;
+		  	notesCheckBox.checked = true;
 		}
 		else{
 			progressCount -= 20;
 			clearProgress();
 		  	progress.classList.remove('p20');
-		  	phoneCheckBox.checked = false;
+		  	notesCheckBox.checked = false;
 		}
 	});
 
