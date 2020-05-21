@@ -1,6 +1,7 @@
 (function() {
 	//progress-color
 	let progress = document.querySelector('#progress-color');
+	let progressCount = 0;
 
 	//name.onfocus = inputFocus;
 	//name.onblur = inputBlur;
@@ -10,11 +11,14 @@
 
 	name.addEventListener('blur', function(){
 		if(name.value){
-		  	progress.classList.add('p10');
+			progressCount += 20;
+		  	progress.classList.add('p'+progressCount);
 		  	nameCheckBox.checked = true;
 		}
 		else{
-		  	progress.classList.remove('p10');
+			progressCount -= 20;
+		  	clearProgress();
+		  	progress.classList.add('p'+progressCount);
 		  	nameCheckBox.checked = false;
 		}
 	});
@@ -24,10 +28,12 @@
 
 	email.addEventListener('blur', function(){
 		if(email.value){
-		  	progress.classList.add('p20');
+			progressCount += 20;
+		  	progress.classList.add('p'+progressCount);
 		  	emailCheckBox.checked = true;
 		}
 		else{
+			progressCount -= 20;
 		  	progress.classList.remove('p20');
 		  	emailCheckBox.checked = false;
 		}
@@ -51,6 +57,13 @@
 	  }
 
 	  console.log()
+	}
+
+
+
+	function clearProgress(){
+		let progressBar = document.querySelector('#progress-color');
+		progressBar.classList.remove('p20', 'p40', 'p60', 'p80', 'p100');
 	}
 
 })();
