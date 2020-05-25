@@ -19,9 +19,6 @@
 		  	progress.classList.add('p' + progressCount);
 		  	nameCheckBox.checked = true;
 		}
-		/*else if(name.value.length > 0 && nameValProgress > 0){
-
-		}*/
 		else if(name.value.length < 1 ){
 			clearProgress();
 			progressCount -= 20;
@@ -29,9 +26,6 @@
 		  	progress.classList.add('p'+progressCount);
 		  	nameCheckBox.checked = false;
 		}
-
-		//console.log('progress count: ' + progressCount);
-		//console.log('NameVal progress: ' + nameValProgress);
 	});
 
 	
@@ -45,10 +39,7 @@
 		  	progress.classList.add('p' + progressCount);
 		  	emailCheckBox.checked = true;
 		}
-		else if(email.value.length > 0 && emailValProgress > 0){
-
-		}
-		else{
+		else if(email.value.length < 1 ){
 			clearProgress();
 			progressCount -= 20;
 			emailValProgress -= 20
@@ -68,10 +59,7 @@
 		  	progress.classList.add('p' + progressCount);
 		  	phoneCheckBox.checked = true;
 		}
-		else if(phone.value.length > 0 && phoneNumberValProgress > 0){
-
-		}
-		else{
+		else if(phone.value.length < 1 ){
 			clearProgress();
 			progressCount -= 20;
 			phoneNumberValProgress -= 20
@@ -92,10 +80,7 @@
 		  	progress.classList.add('p' + progressCount);
 		  	websiteCheckBox.checked = true;
 		}
-		else if(website.value.length > 0 && websiteValProgress > 0){
-
-		}
-		else{
+		else if(website.value.length < 1 ){
 			clearProgress();
 			progressCount -= 20;
 			websiteValProgress -= 20
@@ -115,10 +100,7 @@
 		  	progress.classList.add('p' + progressCount);
 		  	notesCheckBox.checked = true;
 		}
-		else if(notes.value.length > 0 && notesValProgress > 0){
-
-		}
-		else{
+		else if(notes.value.length < 1 ){
 			clearProgress();
 			progressCount -= 20;
 			notesValProgress -= 20
