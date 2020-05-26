@@ -3,12 +3,8 @@
 	let progress = document.querySelector('#progress-color');
 	let progressCount = 0;
 
-	let nameValProgress = [0];
-	let emailValProgress = [0];
-	let phoneNumberValProgress = [0];
-	let websiteValProgress = [0];
-	let notesValProgress = [0];
 
+	let nameValProgress = [0];
 	let name = document.querySelector('#name');
 	let nameCheckBox = document.querySelector('#name-checkbox');
 
@@ -30,7 +26,8 @@
 		processProgress(name, nameCheckBox, nameValProgress);
 	});
 
-	
+
+	let emailValProgress = [0];
 	let email = document.querySelector('#email');
 	let emailCheckBox = document.querySelector('#email-checkbox');
 
@@ -39,6 +36,8 @@
 	});
 
 
+
+	let phoneNumberValProgress = [0];
 	let phone = document.querySelector('#phone');
 	let phoneCheckBox = document.querySelector('#phone-checkbox');
 
@@ -48,6 +47,7 @@
 
 
 	
+	let websiteValProgress = [0];
 	let website = document.querySelector('#website');
 	let websiteCheckBox = document.querySelector('#website-checkbox');
 
@@ -56,6 +56,7 @@
 	});
 
 	
+	let notesValProgress = [0];
 	let notes = document.querySelector('#notes');
 	let notesCheckBox = document.querySelector('#notes-checkbox');
 
