@@ -72,13 +72,13 @@
 	}
 
 	function processProgress(element, elementCheckbox, elementValProgress){
-		if(name.value.length > 0 && elementValProgress[0] < 20){
+		if(element.value.length > 0 && elementValProgress[0] < 20){
 			progressCount += 20;
 			elementValProgress[0] += 20;
 		  	progress.classList.add('p' + progressCount);
 		  	elementCheckbox.checked = true;
 		}
-		else if(name.value.length < 1 ){
+		else if(element.value.length < 1 ){
 			clearProgress();
 			progressCount -= 20;
 			elementValProgress[0] -= 20
