@@ -1,7 +1,7 @@
 body {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 40em;
+	max-width: 100%;
 	width: 88%;
 }
 
@@ -81,6 +81,9 @@ textarea {
 	height: 20px;
 }
 
+
+
+/* Checkbox style */
 /* The container */
 .container {
   display: block;

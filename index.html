@@ -4,72 +4,90 @@
 	<meta charset="utf-8">
 	<title>Project Template</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
+	<style type="text/css">
+		.flex-container{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 95vh;
+		}
+		.flex-container > div {
+			background-color: #f1f1f1;
+			margin: 10px;
+			padding: 20px;
+			/*font-size: 30px;*/
+			width: 100%;
+		}
+	</style>
 </head>
-<body>
+<body class="flex-container">
+	<div>
+		<h1 class="text-center">Progress Bar</h1>
 
-	<h1 class="text-center">Progress Bar</h1>
+		<!-- Show form progress here -->
+		<div id="progress">
+			<div class="progress p10">
+				<div id="progress-color"></div>
+			</div>
+			<div class="tasks">
+				<label class="container">Name
+				  <input type="checkbox" disabled id="name-checkbox">
+				  <span class="checkmark"></span>
+				</label>
 
-	<!-- Show form progress here -->
-	<div id="progress">
-		<div class="progress p10">
-			<div id="progress-color"></div>
-		</div>
-		<div class="tasks">
-			<label class="container">Name
-			  <input type="checkbox" disabled id="name-checkbox">
-			  <span class="checkmark"></span>
-			</label>
+				<label class="container">Email Address
+				  <input type="checkbox" disabled id="email-checkbox">
+				  <span class="checkmark"></span>
+				</label>
 
-			<label class="container">Email Address
-			  <input type="checkbox" disabled id="email-checkbox">
-			  <span class="checkmark"></span>
-			</label>
+				<label class="container">Phone Number
+				  <input type="checkbox" disabled id="phone-checkbox">
+				  <span class="checkmark"></span>
+				</label>
 
-			<label class="container">Phone Number
-			  <input type="checkbox" disabled id="phone-checkbox">
-			  <span class="checkmark"></span>
-			</label>
+				<label class="container">Website
+				  <input type="checkbox" disabled id="website-checkbox">
+				  <span class="checkmark"></span>
+				</label>
 
-			<label class="container">Website
-			  <input type="checkbox" disabled id="website-checkbox">
-			  <span class="checkmark"></span>
-			</label>
-
-			<label class="container">Notes
-			  <input type="checkbox" disabled id="notes-checkbox">
-			  <span class="checkmark"></span>
-			</label>
+				<label class="container">Notes
+				  <input type="checkbox" disabled id="notes-checkbox">
+				  <span class="checkmark"></span>
+				</label>
+			</div>
 		</div>
 	</div>
+	
+	<div>
+		<form id="autosave">
+			<div>
+				<label for="name">Name</label>
+				<input type="text" id="name">
+			</div>
 
-	<form id="autosave">
-		<div>
-			<label for="name">Name</label>
-			<input type="text" id="name">
-		</div>
+			<div>
+				<label for="email">Email Address</label>
+				<input type="email" id="email">
+			</div>
 
-		<div>
-			<label for="email">Email Address</label>
-			<input type="email" id="email">
-		</div>
+			<div>
+				<label for="phone">Phone</label>
+				<input type="tel" id="phone">
+			</div>
 
-		<div>
-			<label for="phone">Phone</label>
-			<input type="tel" id="phone">
-		</div>
+			<div>
+				<label for="website">Website</label>
+				<input type="url" id="website">
+			</div>
 
-		<div>
-			<label for="website">Website</label>
-			<input type="url" id="website">
-		</div>
+			<div>
+				<label for="notes">Notes</label>
+				<textarea id="notes"></textarea>
+			</div>
 
-		<div>
-			<label for="notes">Notes</label>
-			<textarea id="notes"></textarea>
-		</div>
-
-		<button>Submit</button>
-	</form>
+			<button>Submit</button>
+		</form>
+	</div>
 
 
 	<script>
