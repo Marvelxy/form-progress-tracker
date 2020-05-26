@@ -1,9 +1,8 @@
 (function() {
-	//progress-color
+	// progress-color
 	let progress = document.querySelector('#progress-color');
 	let progressCount = 0;
 
-	// let nameValProgress = 0;
 	let nameValProgress = [0];
 	let emailValProgress = [0];
 	let phoneNumberValProgress = [0];
@@ -31,30 +30,11 @@
 		processProgress(name, nameCheckBox, nameValProgress);
 	});
 
-
-
-
-
-
 	
 	let email = document.querySelector('#email');
 	let emailCheckBox = document.querySelector('#email-checkbox');
 
 	email.addEventListener('change', function(){
-		/*if(email.value.length > 0 && emailValProgress < 20){
-			progressCount += 20;
-			emailValProgress += 20;
-		  	progress.classList.add('p' + progressCount);
-		  	emailCheckBox.checked = true;
-		}
-		else if(email.value.length < 1 ){
-			clearProgress();
-			progressCount -= 20;
-			emailValProgress -= 20
-		  	progress.classList.add('p'+progressCount);
-		  	emailCheckBox.checked = false;
-		}*/
-
 		processProgress(email, emailCheckBox, emailValProgress);
 	});
 
@@ -63,20 +43,6 @@
 	let phoneCheckBox = document.querySelector('#phone-checkbox');
 
 	phone.addEventListener('change', function(){
-		/*if(phone.value.length > 0 && phoneNumberValProgress < 20){
-			progressCount += 20;
-			phoneNumberValProgress += 20;
-		  	progress.classList.add('p' + progressCount);
-		  	phoneCheckBox.checked = true;
-		}
-		else if(phone.value.length < 1 ){
-			clearProgress();
-			progressCount -= 20;
-			phoneNumberValProgress -= 20
-		  	progress.classList.add('p'+progressCount);
-		  	phoneCheckBox.checked = false;
-		}*/
-
 		processProgress(phone, phoneCheckBox, phoneNumberValProgress);
 	});
 
@@ -86,20 +52,6 @@
 	let websiteCheckBox = document.querySelector('#website-checkbox');
 
 	website.addEventListener('change', function(){
-		/*if(website.value.length > 0 && websiteValProgress < 20){
-			progressCount += 20;
-			websiteValProgress += 20;
-		  	progress.classList.add('p' + progressCount);
-		  	websiteCheckBox.checked = true;
-		}
-		else if(website.value.length < 1 ){
-			clearProgress();
-			progressCount -= 20;
-			websiteValProgress -= 20
-		  	progress.classList.add('p'+progressCount);
-		  	websiteCheckBox.checked = false;
-		}*/
-
 		processProgress(website, websiteCheckBox, websiteValProgress);
 	});
 
@@ -108,20 +60,6 @@
 	let notesCheckBox = document.querySelector('#notes-checkbox');
 
 	notes.addEventListener('change', function(){
-		/*if(notes.value.length > 0 && notesValProgress < 20){
-			progressCount += 20;
-			notesValProgress += 20;
-		  	progress.classList.add('p' + progressCount);
-		  	notesCheckBox.checked = true;
-		}
-		else if(notes.value.length < 1 ){
-			clearProgress();
-			progressCount -= 20;
-			notesValProgress -= 20
-		  	progress.classList.add('p'+progressCount);
-		  	notesCheckBox.checked = false;
-		}*/
-
 		processProgress(notes, notesCheckBox, notesValProgress);
 	});
 	
